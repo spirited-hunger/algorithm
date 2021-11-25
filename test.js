@@ -9,5 +9,9 @@ test("test2", () => {
 })
 
 test("test3", () => {
+  expect(paveBox([80, 30, 40, 55, 66, 21, 8, 25, 44, 77, 92])).toBe(10);
+})
+
+test("test4", () => {
   expect(paveBox([95, 90, 99, 99, 80, 99])).toBe(4);
 })
