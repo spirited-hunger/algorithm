@@ -67,10 +67,26 @@ function paveBox1(boxes) {
 }
 
 // 😀 Good
+function paveBox2(boxes) {
+  let people = [];
+  let dupBoxes = boxes.slice(0);
+
+  while (0 < dupBoxes.length) {
+    let finishIdx = dupBoxes.findIndex(el => dupBoxes[0] < el);
+
+    if (finishIdx === -1) {
+      people.push(dupBoxes.length);
+      dupBoxes.splice(0, dupBoxes.length)
+    } else {
+      people.push(finishIdx);
+      dupBoxes.splice(0, finishIdx);
+    }
+  }
+
+  return Math.max(...people)
+}
 
 
-
-
-module.exports = paveBox1;
+module.exports = paveBox2;
 
 
