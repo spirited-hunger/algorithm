@@ -1,4 +1,4 @@
-const paveBox = require("./paveBox.js");
+const paveBox = require("./Queue/paveBox.js");
 
 test("test1", () => {
   expect(paveBox([1])).toBe(1);
