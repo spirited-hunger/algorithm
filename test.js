@@ -20,7 +20,10 @@ describe("----- PaveBox Problem -----", () => {
 });
 
 describe("----- Permuation Problems -----", () => {
-  test("p1", () => {
+  test("basic permuation", () => {
     expect(permutation.basicPermuation([1, 2, 3, 4], 3)).toBe(24);
-  })
+  });
+  test("basic combination", () => {
+    expect(permutation.basicCombination([1, 2, 3, 4], 3)).toBe(4);
+  });
 });

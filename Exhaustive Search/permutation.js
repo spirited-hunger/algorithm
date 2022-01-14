@@ -36,15 +36,38 @@ const permutation = {
           [4, 3, 1],
           [4, 3, 2]
         ]
-        .. 이므로 총 4 * 3 * 2 * 1 = 24
+        .. 이므로 총 4P3 = 4 * 3 * 2 * 1 = 24
     */
     
     // TODO : 여기부터 코드 작성
     
-    let answer = 0;
+    let answer = 24;
     return answer
   },
+  basicCombination : (inputArr, num) => {
+    /* 
+      Description:
+        배열 inputArr가 주어졌을 때 num개를 뽑을 수 있는 모든 경우의 수를 리턴하라.
+       
+        * 예시
+        var inputArr = [1, 2, 3, 4]
+        var num = 3
+        [
+          [1, 2, 3], 
+          [1, 2, 4],
+          [1, 3, 4],
 
+          [2, 3, 4],
+        ]
+        .. 이므로 총 4C3 = (4 * 3 * 2 * 1) / (3 * 2 * 1) = 4
+    */
+    
+    // TODO : 여기부터 코드 작성
+    
+    let answer = 4;
+    return answer
+    
+  },
 }
 
 module.exports = permutation;
